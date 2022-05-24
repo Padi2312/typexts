@@ -1,0 +1,69 @@
+{
+  "name": "@patrand/typexts",
+  "version": "0.1.0",
+  "main": "./dist/index.min.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/extensions/",
+    "./string": "./dist/extensions/string/*",
+    "./array": "./dist/extensions/array/*"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/extensions/*"
+      ],
+      "string": [
+        "./dist/extensions/string/*"
+      ],
+      "array": [
+        "./dist/extensions/array/*"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "tsnd --respawn --watch ./src/** src/dev.ts",
+    "prebuild": "rimraf ./dist",
+    "postbuild": "minify ./dist/index.js > ./dist/index.min.js",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "extension",
+    "primitive",
+    "types",
+    "stringextension",
+    "string",
+    "arrayextension",
+    "array",
+    "objectextensions",
+    "exts",
+    "typexts",
+    "typescript",
+    "typescriptextensions"
+  ],
+  "author": "Patrick Arndt",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "jest": "^28.1.0",
+    "minify": "^8.0.4",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^28.0.3",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Padi2312/typexts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Padi2312/typexts/issues"
+  },
+  "homepage": "https://github.com/Padi2312/typexts#readme",
+  "description": "A library for giving some types useful extensions.",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
