@@ -90,9 +90,10 @@ ObjectExts:
 import '@patrand/typexts/ObjectExts'
 ```
 
+**CURRENTLY NOT WORKING!!!**
 Or in case you only need a specifc extension like `isEmpty` for strings:
 ```ts
-import '@patrand/typexts/string/IsEmpty'
+import '@patrand/typexts/string/IsEmpty' 
 ```
 ---
 

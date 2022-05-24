@@ -1,30 +1,42 @@
 {
   "name": "@patrand/typexts",
-  "version": "0.1.0",
-  "main": "./dist/index.min.js",
+  "version": "0.1.1",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist/extensions/",
-    "./string": "./dist/extensions/string/*",
-    "./array": "./dist/extensions/array/*"
+    ".": "./dist/index.js",
+    "./*": "./dist/*",
+    "./ArrayExts": "./dist/extensions/ArrayExts.js",
+    "./StringExts": "./dist/extensions/StringExts.js",
+    "./ArrayExts/*": "./dist/extensions/array/*",
+    "./StringExts/*": "./dist/extensions/string/*",
+    "./ObjectExts": "./dist/extensions/ObjectExts.js"
   },
   "typesVersions": {
     "*": {
       "*": [
-        "./dist/extensions/*"
+        "dist/index.d.ts"
       ],
-      "string": [
-        "./dist/extensions/string/*"
+      "ArrayExts": [
+        "./dist/extensions/ArrayExts.d.ts"
       ],
-      "array": [
+      "StringExts": [
+        "./dist/extensions/StringExts.d.ts"
+      ],
+      "ObjectExts": [
+        "./dist/extensions/ObjectExts.d.ts"
+      ],
+      "ArrayExts/*": [
         "./dist/extensions/array/*"
+      ],
+      "StringExts/*": [
+        "./dist/extensions/string/*"
       ]
     }
   },
   "scripts": {
     "start": "tsnd --respawn --watch ./src/** src/dev.ts",
     "prebuild": "rimraf ./dist",
-    "postbuild": "minify ./dist/index.js > ./dist/index.min.js",
     "build": "tsc",
     "test": "jest"
   },
@@ -47,7 +59,6 @@
   "devDependencies": {
     "@types/jest": "^27.5.1",
     "jest": "^28.1.0",
-    "minify": "^8.0.4",
     "rimraf": "^3.0.2",
     "ts-jest": "^28.0.3",
     "ts-node-dev": "^1.1.8",

@@ -1,4 +1,4 @@
-import '../extensions/stringexts'
+import '../extensions/StringExts'
 
 describe('StringExtensions', () => {
 
