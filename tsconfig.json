@@ -15,9 +15,10 @@
   "include": [
     "src",
     "dist"
-  ],
+, "minimize.ts"  ],
   "exclude": [
     "node_modules",
+    "minimize.ts",
     "src/dev.ts",
     "src/__tests__"
   ]
