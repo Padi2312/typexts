@@ -1,7 +1,7 @@
 declare global {
     interface Object {
         print(): void
-        printJson(): void
+        printAsJson(): void
     }
 }
 
@@ -9,7 +9,7 @@ Object.prototype.print = function () {
     console.log(this)
 }
 
-Object.prototype.printJson = function () {
+Object.prototype.printAsJson = function () {
     console.log(JSON.stringify(this))
 }
 

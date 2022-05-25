@@ -26,6 +26,8 @@ if(test.isEmpty()){
 ## Usage
 To get started include **typexts** in a top level file like `index.ts`, `main.ts` or just in the file where you want to use the extension.
 
+**Note: Currently not working with SolidJS**
+
 ## Examples
 Example:
 ```ts
@@ -65,10 +67,18 @@ test.print() // is equal to `console.log(test)`
 ## Include everything
 The following will include all extensions.
 
-Example:
+**Typscript:**
 ```ts
 import '@patrand/typexts'
 ```
+
+**Javascript:**
+
+*In JavaScript you can use the same paths like for typescirpt just with require statement*
+```js
+const typexts = require('@patrand/typexts')
+```
+
 
 ## Single includes
 In order to minimize the imports you can just import the extensions you need.
@@ -90,11 +100,17 @@ ObjectExts:
 import '@patrand/typexts/ObjectExts'
 ```
 
-**CURRENTLY NOT WORKING!!!**
 Or in case you only need a specifc extension like `isEmpty` for strings:
 ```ts
 import '@patrand/typexts/string/IsEmpty' 
+
+// Or import some more extensions
+import '@patrand/typexts/string/IsEmpty' 
+import '@patrand/typexts/string/IsNotEmpty' 
 ```
+
+
+
 ---
 
 ## List of features
