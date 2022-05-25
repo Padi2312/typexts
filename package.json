@@ -1,6 +1,6 @@
 {
   "name": "@patrand/typexts",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -36,11 +36,10 @@
   },
   "scripts": {
     "start": "tsnd --respawn --watch ./src/** src/dev.ts",
-    "minify": "ts-node minimize",
     "prebuild": "rimraf ./dist",
     "build": "tsc",
-    "postbuild": "npm run minify",
-    "test": "jest"
+    "postbuild": "ts-node minimize",
+    "test": "jest --coverage"
   },
   "keywords": [
     "extension",

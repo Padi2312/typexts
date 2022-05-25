@@ -1,122 +1,139 @@
 # Typexts
-A library giving some types useful extensions. 
+
+A library giving some types useful extensions.
 
 Simple example i bet you know:
 
-*Check if the string is empty. -Well not complex but annoying:*
+_Check if the string is empty. -Well not complex but annoying:_
 
 ```ts
-const test = "string"
-if(test.length === 0){
-    // ...
+const test = "string";
+if (test.length === 0) {
+  // ...
 }
 ```
 
 With **typexts**:
 
 ```ts
-import '@patrand/typexts'
-if(test.isEmpty()){
-    // ...
+import "@patrand/typexts";
+if (test.isEmpty()) {
+  // ...
 }
 ```
 
-
 # Getting started
+
 ## Usage
+
 To get started include **typexts** in a top level file like `index.ts`, `main.ts` or just in the file where you want to use the extension.
 
 **Note: Currently not working with SolidJS**
 
 ## Examples
-Example:
-```ts
-import '@patrand/typexts'
 
-const test = "iAmString"
-if(test.isEmpty()){
-    console.log("string is empty")
-}
-else{
-    console.log("string is not empty")
+Example:
+
+```ts
+import "@patrand/typexts";
+
+const test = "iAmString";
+if (test.isEmpty()) {
+  console.log("string is empty");
+} else {
+  console.log("string is not empty");
 }
 ```
 
 Example 2:
-```ts
-import '@patrand/typexts'
 
-const test = ["i","am","string","array"]
-test.print() // is equal to `console.log(test)`
+```ts
+import "@patrand/typexts";
+
+const test = ["i", "am", "string", "array"];
+test.print(); // is equal to `console.log(test)`
 ```
 
 Example 3:
+
 ```ts
-import '@patrand/typexts'
+import "@patrand/typexts";
 
 const test = {
-    any:"object",
-    can:"be",
-    easy:"printed"
-}
-test.print() // is equal to `console.log(test)`
+  any: "object",
+  can: "be",
+  easy: "printed",
+};
+test.print(); // is equal to `console.log(test)`
 ```
 
-
 # Includes
+
 ## Include everything
+
 The following will include all extensions.
 
 **Typscript:**
+
 ```ts
-import '@patrand/typexts'
+import "@patrand/typexts";
 ```
 
 **Javascript:**
 
-*In JavaScript you can use the same paths like for typescirpt just with require statement*
+_In JavaScript you can use the same paths like for typescirpt just with require statement_
+
 ```js
-const typexts = require('@patrand/typexts')
+const typexts = require("@patrand/typexts");
 ```
 
-
 ## Single includes
+
 In order to minimize the imports you can just import the extensions you need.
 
 You can import extensions for only some types.
 
 StringExts:
+
 ```ts
-import '@patrand/typexts/StringExts'
+import "@patrand/typexts/StringExts";
 ```
 
 ArrayExts:
+
 ```ts
-import '@patrand/typexts/ArrayExts'
+import "@patrand/typexts/ArrayExts";
+```
+
+BooleanExts:
+
+```ts
+import "@patrand/typexts/BooleanExts";
 ```
 
 ObjectExts:
+
 ```ts
-import '@patrand/typexts/ObjectExts'
+import "@patrand/typexts/ObjectExts";
 ```
 
 Or in case you only need a specifc extension like `isEmpty` for strings:
+
 ```ts
-import '@patrand/typexts/string/IsEmpty' 
+import "@patrand/typexts/string/IsEmpty";
 
 // Or import some more extensions
-import '@patrand/typexts/string/IsEmpty' 
-import '@patrand/typexts/string/IsNotEmpty' 
+import "@patrand/typexts/string/IsEmpty";
+import "@patrand/typexts/string/IsNotEmpty";
 ```
-
-
 
 ---
 
 ## List of features
 
 #### Strings
-- `isEmpty` 
+
+- `isEmpty`
 - `isNotEmpty`
 - `isNumber`
 - `print`
@@ -124,14 +141,20 @@ import '@patrand/typexts/string/IsNotEmpty'
 - `isUrl`
 
 #### Array
+
 - `isEmpty`
 - `isNotEmpty`
 - `print`
 - `reverse`
 
+#### Boolean
+
+- `print`
+- `on`
+- `onFalse`
+- `onTrue`
+
 #### Object
+
 - `print`
 - `printJson`
-
-
-
