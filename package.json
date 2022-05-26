@@ -1,6 +1,6 @@
 {
   "name": "@patrand/typexts",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -8,6 +8,8 @@
     "./*": "./dist/*",
     "./ArrayExts": "./dist/extensions/ArrayExts.js",
     "./StringExts": "./dist/extensions/StringExts.js",
+    "./BooleanExts": "./dist/extensions/Boolean.js",
+    "./NumberExts": "./dist/extensions/Number.js",
     "./array/*": "./dist/extensions/array/*.js",
     "./string/*": "./dist/extensions/string/*.js",
     "./ObjectExts": "./dist/extensions/ObjectExts.js"
@@ -25,6 +27,12 @@
       ],
       "ObjectExts": [
         "./dist/extensions/ObjectExts.d.ts"
+      ],
+      "BooleanExts": [
+        "./dist/extensions/BooleanExts.d.ts"
+      ],
+      "NumberExts": [
+        "./dist/extensions/NumberExts.d.ts"
       ],
       "array/*": [
         "./dist/extensions/array/*.d.ts"

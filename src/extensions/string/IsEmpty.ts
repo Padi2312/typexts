@@ -1,5 +1,6 @@
 declare global {
     interface String  {
+        /** Checks if `this` is empty */
         isEmpty(): boolean
     }
 }

@@ -1,5 +1,6 @@
 declare global {
     interface String  {
+        /** Returns the reversed chars of `this` */
         reverse(): string
     }
 }

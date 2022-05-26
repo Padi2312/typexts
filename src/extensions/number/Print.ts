@@ -1,11 +1,11 @@
 declare global {
-    interface String {
+    interface Number {
         /** console logs the value of `this` */
         print(): void
     }
 }
 
-String.prototype.print = function () {
+Number.prototype.print = function () {
     console.log(this)
 }
 

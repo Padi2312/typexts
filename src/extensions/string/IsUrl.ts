@@ -1,5 +1,6 @@
 declare global {
     interface String {
+        /** Checks if `this` string is a URL */
         isUrl(): boolean
     }
 }

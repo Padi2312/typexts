@@ -1,5 +1,6 @@
 declare global {
     interface Array<T> {
+        /** Checks if `this` is empty */
         isEmpty(): boolean
 
     }

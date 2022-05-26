@@ -1,5 +1,6 @@
 declare global {
     interface Array<T> {
+        /** Returns the reversed items of `this` */
         reverse(): Array<T>
     }
 }
