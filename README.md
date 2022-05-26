@@ -93,36 +93,26 @@ In order to minimize the imports you can just import the extensions you need.
 
 You can import extensions for only some types.
 
-StringExts:
+*Example of only including StringExts:*
 
 ```ts
 import "@patrand/typexts/StringExts";
 ```
+ 
+Here's a list of typexts packs: 
+1. `import "@patrand/typexts/StringExts"`
+2. `import "@patrand/typexts/ArrayExts"`
+3. `import "@patrand/typexts/BooleanExts"`
+4. `import "@patrand/typexts/ObjectExts"`
+5. `import "@patrand/typexts/NumberExts"`
 
-ArrayExts:
-
-```ts
-import "@patrand/typexts/ArrayExts";
-```
-
-BooleanExts:
-
-```ts
-import "@patrand/typexts/BooleanExts";
-```
-
-ObjectExts:
-
-```ts
-import "@patrand/typexts/ObjectExts";
-```
 
 Or in case you only need a specifc extension like `isEmpty` for strings:
 
 ```ts
 import "@patrand/typexts/string/IsEmpty";
 
-// Or import some more extensions
+// Or import multiple extensions
 import "@patrand/typexts/string/IsEmpty";
 import "@patrand/typexts/string/IsNotEmpty";
 ```
@@ -153,6 +143,13 @@ import "@patrand/typexts/string/IsNotEmpty";
 - `on`
 - `onFalse`
 - `onTrue`
+
+#### Number
+
+- `isPositive`
+- `isNegative`
+- `isZero`
+
 
 #### Object
 
