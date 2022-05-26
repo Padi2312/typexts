@@ -1,5 +1,8 @@
 # Typexts
 
+[![Build and Publish](https://github.com/Padi2312/typexts/actions/workflows/build_publish.yml/badge.svg?branch=0.1.7)](https://github.com/Padi2312/typexts/actions/workflows/build_publish.yml) ![npm](https://img.shields.io/npm/v/@patrand/typexts)
+![npm](https://img.shields.io/npm/dw/@patrand/typexts)
+
 A library giving some types useful extensions.
 
 Simple example i bet you know:
