@@ -31,8 +31,6 @@ if (test.isEmpty()) {
 
 To get started include **typexts** in a top level file like `index.ts`, `main.ts` or just in the file where you want to use the extension.
 
-**Note: Currently not working with SolidJS**
-
 ## Examples
 
 Example:
